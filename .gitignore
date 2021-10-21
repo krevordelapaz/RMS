@@ -1,0 +1,14 @@
+
+MigrationBackup/32c642da/Modules/RMS.Admin/NuGetUpgradeLog.html
+MigrationBackup/48a7c2b3/Structures/RMS.DataStructures/NuGetUpgradeLog.html
+MigrationBackup/ddee6667/RMS.App/NuGetUpgradeLog.html
+MigrationBackup/f07d8957/Modules/RMS.Modules/NuGetUpgradeLog.html
+MigrationBackup/f07d8957/Modules/RMS.Modules/RMS.Modules.csproj
+MigrationBackup/f07d8957/Modules/RMS.Modules/packages.config
+MigrationBackup/ddee6667/RMS.App/RMS.App.csproj
+MigrationBackup/ddee6667/RMS.App/packages.config
+MigrationBackup/48a7c2b3/Structures/RMS.DataStructures/RMS.DataStructures.csproj
+MigrationBackup/48a7c2b3/Structures/RMS.DataStructures/packages.config
+MigrationBackup/32c642da/Modules/RMS.Admin/RMS.Admin.csproj
+MigrationBackup/32c642da/Modules/RMS.Admin/packages.config
+*.nupkg

@@ -1,0 +1,7 @@
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\bin\Debug\RMS.Structures.dll
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\bin\Debug\RMS.Structures.pdb
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\obj\Debug\RMS.Structures.g.resources
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\obj\Debug\RMS.Structures.csproj.CoreCompileInputs.cache
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\obj\Debug\RMS.Structures.dll
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\obj\Debug\RMS.Structures.pdb
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Structures\obj\Debug\RMS.Structures.csprojAssemblyReference.cache

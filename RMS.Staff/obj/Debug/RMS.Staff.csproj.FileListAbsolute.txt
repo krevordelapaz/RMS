@@ -1,0 +1,6 @@
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\bin\Debug\RMS.Staff.dll
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\bin\Debug\RMS.Staff.pdb
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\obj\Debug\RMS.Staff.csproj.CoreCompileInputs.cache
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\obj\Debug\RMS.Staff.dll
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\obj\Debug\RMS.Staff.pdb
+C:\Users\10051074\Desktop\Personal\Personal Projects\RMS\RMS\RMS.Staff\obj\Debug\RMS.Staff.csprojAssemblyReference.cache

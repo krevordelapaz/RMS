@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E74295B0-57D7-45F2-BFBF-0AED80A14E07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RMS.Modules</RootNamespace>
+    <AssemblyName>RMS.Modules</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModuleList\AdminModule.cs" />
+    <Compile Include="Modules.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RMS.Admin\RMS.Admin.csproj">
+      <Project>{3a2048c4-9fa2-4fb6-a656-b7a56c3782a3}</Project>
+      <Name>RMS.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.DataStructures.Admin\RMS.DataStructures.Admin.csproj">
+      <Project>{C6B14261-9E04-4779-900A-00D1EC1441BA}</Project>
+      <Name>RMS.DataStructures.Admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.DataStructures\RMS.DataStructures.csproj">
+      <Project>{EF9306FB-C6F2-4D1D-8BA2-099680A12AC6}</Project>
+      <Name>RMS.DataStructures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.Staff\RMS.Staff.csproj">
+      <Project>{7d1a4e0b-b603-475d-8ff0-44c425d47e88}</Project>
+      <Name>RMS.Staff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RMS.Structures\RMS.Structures.csproj">
+      <Project>{1e305762-0ced-4e43-a01f-19386f6e111a}</Project>
+      <Name>RMS.Structures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Core">
+      <Version>6.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Unity">
+      <Version>6.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Wpf">
+      <Version>6.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Unity">
+      <Version>4.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

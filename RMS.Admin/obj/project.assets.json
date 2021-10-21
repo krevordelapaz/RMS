@@ -1,0 +1,878 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Prism.Core/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        }
+      },
+      "RMS.DataStructures/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0",
+          "Prism.Unity": "6.3.0",
+          "Prism.Wpf": "6.3.0",
+          "RMS.DataStructures.Admin": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        }
+      },
+      "RMS.DataStructures.Admin/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        }
+      },
+      "RMS.Structures/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Prism.Core/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        }
+      },
+      "RMS.DataStructures/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0",
+          "Prism.Unity": "6.3.0",
+          "Prism.Wpf": "6.3.0",
+          "RMS.DataStructures.Admin": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        }
+      },
+      "RMS.DataStructures.Admin/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        }
+      },
+      "RMS.Structures/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Prism.Core/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        }
+      },
+      "RMS.DataStructures/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0",
+          "Prism.Unity": "6.3.0",
+          "Prism.Wpf": "6.3.0",
+          "RMS.DataStructures.Admin": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        }
+      },
+      "RMS.DataStructures.Admin/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        }
+      },
+      "RMS.Structures/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "CommonServiceLocator/1.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
+        }
+      },
+      "Extended.Wpf.Toolkit/3.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "PresentationCore",
+          "PresentationFramework",
+          "System",
+          "System.Xaml",
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {},
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {},
+          "lib/net40/Xceed.Wpf.DataGrid.dll": {},
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {}
+        },
+        "resource": {
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
+          }
+        }
+      },
+      "Prism.Core/6.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Wpf": "6.3.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/6.3.0": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0"
+        },
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Unity/4.0.1": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0"
+        },
+        "compile": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Practices.Unity.Configuration.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll": {},
+          "lib/net45/Microsoft.Practices.Unity.dll": {}
+        }
+      },
+      "RMS.DataStructures/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "CommonServiceLocator": "1.3.0",
+          "Prism.Core": "6.3.0",
+          "Prism.Unity": "6.3.0",
+          "Prism.Wpf": "6.3.0",
+          "RMS.DataStructures.Admin": "1.0.0",
+          "Unity": "4.0.1"
+        },
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.dll": {}
+        }
+      },
+      "RMS.DataStructures.Admin/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.DataStructures.Admin.dll": {}
+        }
+      },
+      "RMS.Structures/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RMS.Structures.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/1.3.0": {
+      "sha512": "fbjO0SNwbOFPdwVfyqv+B7gIJ2CVBOFPKqn1mDDECK7KER8jFaOdcvroFYoAHa0ktPbxi5s+15qOLnA96f8GSA==",
+      "type": "package",
+      "path": "commonservicelocator/1.3.0",
+      "files": [
+        "commonservicelocator.1.3.0.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
+        "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "Extended.Wpf.Toolkit/3.4.0": {
+      "sha512": "nZlwRi7+CmBGV3b7OQouER05MDBBhPOc5SsPYU6/5OcecPBM/+rJGAsl/iHEf1CeF7rZu5wF3TwzAQs/B5Wn9A==",
+      "type": "package",
+      "path": "extended.wpf.toolkit/3.4.0",
+      "files": [
+        ".signature.p7s",
+        "extended.wpf.toolkit.3.4.0.nupkg.sha512",
+        "extended.wpf.toolkit.nuspec",
+        "lib/net35/WPFToolkit.dll",
+        "lib/net35/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "lib/net40/Xceed.Wpf.DataGrid.dll",
+        "lib/net40/Xceed.Wpf.Toolkit.dll",
+        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
+        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
+        "tools/install.ps1"
+      ]
+    },
+    "Prism.Core/6.3.0": {
+      "sha512": "8KKRF/1Hx76dXFrYb3XUbkGFWTZjjI99DTGcPt5/aGghb3iYBscxiT4WDVlGmUpfqw7QS/jDI2BGs5ZsAy8XVA==",
+      "type": "package",
+      "path": "prism.core/6.3.0",
+      "files": [
+        "lib/MonoAndroid10/Prism.dll",
+        "lib/MonoAndroid10/Prism.xml",
+        "lib/MonoTouch10/Prism.dll",
+        "lib/MonoTouch10/Prism.xml",
+        "lib/Xamarin.iOS10/Prism.dll",
+        "lib/Xamarin.iOS10/Prism.xml",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Prism.xml",
+        "lib/wp8/Prism.dll",
+        "lib/wp8/Prism.xml",
+        "lib/wp81/Prism.dll",
+        "lib/wp81/Prism.xml",
+        "lib/wpa81/Prism.dll",
+        "lib/wpa81/Prism.xml",
+        "prism.core.6.3.0.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.Unity/6.3.0": {
+      "sha512": "rWzjtWPqqZ0d+Tv98cPYJy0BeBdllbsFDWk6OlkprGDzimSBgmSrCNZuwBDxcxCCcVjlL+IQD5hyIpjT+GpNww==",
+      "type": "package",
+      "path": "prism.unity/6.3.0",
+      "files": [
+        "lib/net45/Prism.Unity.Wpf.dll",
+        "lib/net45/Prism.Unity.Wpf.xml",
+        "lib/uap10.0/Prism.Unity.Windows.dll",
+        "lib/uap10.0/Prism.Unity.Windows.pri",
+        "lib/uap10.0/Prism.Unity.Windows.xml",
+        "prism.unity.6.3.0.nupkg.sha512",
+        "prism.unity.nuspec"
+      ]
+    },
+    "Prism.Wpf/6.3.0": {
+      "sha512": "qqzxMtNFFeB//yF01b6dCj/xOH19RlVzS/5G6yjZJsEqtFD+b7UTRDhiNquWwvw0vTpEv4OM85QAEzBQuYjxMQ==",
+      "type": "package",
+      "path": "prism.wpf/6.3.0",
+      "files": [
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "prism.wpf.6.3.0.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "Unity/4.0.1": {
+      "sha512": "RHFTCW13E186hCI0Z4R47tl2SyxQOp3TNaBlilxKktO+u+NUWyOK/nPJ25PWwgPh4j4/GM46PQszSsusui+ikw==",
+      "type": "package",
+      "path": "unity/4.0.1",
+      "files": [
+        "UnityConfiguration30.xsd",
+        "lib/net45/Microsoft.Practices.Unity.Configuration.XML",
+        "lib/net45/Microsoft.Practices.Unity.Configuration.dll",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/net45/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/net45/Microsoft.Practices.Unity.dll",
+        "lib/net45/Microsoft.Practices.Unity.xml",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.dll",
+        "lib/portable-net45+wp80+win8+wpa81+MonoAndroid10+MonoTouch10/Microsoft.Practices.Unity.xml",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/win8/Microsoft.Practices.Unity.RegistrationByConvention.pri",
+        "lib/win8/Microsoft.Practices.Unity.dll",
+        "lib/win8/Microsoft.Practices.Unity.xml",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.XML",
+        "lib/wp80/Microsoft.Practices.Unity.RegistrationByConvention.dll",
+        "lib/wp80/Microsoft.Practices.Unity.dll",
+        "lib/wp80/Microsoft.Practices.Unity.xml",
+        "unity.4.0.1.nupkg.sha512",
+        "unity.nuspec"
+      ]
+    },
+    "RMS.DataStructures/1.0.0": {
+      "type": "project",
+      "path": "../RMS.DataStructures/RMS.DataStructures.csproj",
+      "msbuildProject": "../RMS.DataStructures/RMS.DataStructures.csproj"
+    },
+    "RMS.DataStructures.Admin/1.0.0": {
+      "type": "project",
+      "path": "../RMS.DataStructures.Admin/RMS.DataStructures.Admin.csproj",
+      "msbuildProject": "../RMS.DataStructures.Admin/RMS.DataStructures.Admin.csproj"
+    },
+    "RMS.Structures/1.0.0": {
+      "type": "project",
+      "path": "../RMS.Structures/RMS.Structures.csproj",
+      "msbuildProject": "../RMS.Structures/RMS.Structures.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "CommonServiceLocator >= 1.3.0",
+      "Extended.Wpf.Toolkit >= 3.4.0",
+      "Prism.Core >= 6.3.0",
+      "Prism.Unity >= 6.3.0",
+      "Prism.Wpf >= 6.3.0",
+      "RMS.DataStructures >= 1.0.0",
+      "RMS.DataStructures.Admin >= 1.0.0",
+      "RMS.Structures >= 1.0.0",
+      "Unity >= 4.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\10051074\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.Admin\\RMS.Admin.csproj",
+      "projectName": "RMS.Admin",
+      "projectPath": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.Admin\\RMS.Admin.csproj",
+      "packagesPath": "C:\\Users\\10051074\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.Admin\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\10051074\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\NuGetDefaults.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-DC-Releases/": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-DC-Snapshots/": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-DC/": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-RnD-Releases/": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-RnD-Snapshots/": {},
+        "https://nexusl1-emea.gemalto.com/service/local/nuget/ICS-NuGet-RnD/": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.DataStructures.Admin\\RMS.DataStructures.Admin.csproj": {
+              "projectPath": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.DataStructures.Admin\\RMS.DataStructures.Admin.csproj"
+            },
+            "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.DataStructures\\RMS.DataStructures.csproj": {
+              "projectPath": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.DataStructures\\RMS.DataStructures.csproj"
+            },
+            "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.Structures\\RMS.Structures.csproj": {
+              "projectPath": "C:\\Users\\10051074\\Desktop\\Personal\\Personal Projects\\RMS\\RMS\\RMS.Structures\\RMS.Structures.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "CommonServiceLocator": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          },
+          "Extended.Wpf.Toolkit": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
+          "Prism.Core": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          },
+          "Prism.Unity": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          },
+          "Prism.Wpf": {
+            "target": "Package",
+            "version": "[6.3.0, )"
+          },
+          "Unity": {
+            "target": "Package",
+            "version": "[4.0.1, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

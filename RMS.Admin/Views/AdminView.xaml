@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="RMS.Admin.Views.AdminView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:views="clr-namespace:RMS.Admin.Views"
+             xmlns:structures="clr-namespace:RMS.Structures;assembly=RMS.Structures"
+             xmlns:sdmin="clr-namespace:RMS.Sdmin"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        <DataTemplate x:Key="InventoryViewTemplate">
+            <views:InventoryView VerticalAlignment="Stretch"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="MenuViewTemplate">
+            <views:MenuView VerticalAlignment="Stretch"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="StaffsViewTemplate">
+            <views:StaffView VerticalAlignment="Stretch"/>
+        </DataTemplate>
+
+        <sdmin:AdminDataTemplateSelector x:Key="AdminDataTemplateSelector" 
+                                         MenuDataTemplate="{StaticResource MenuViewTemplate}"
+                                         InventoryDataTemplate="{StaticResource InventoryViewTemplate}"
+                                         StaffsDataTemplate="{StaticResource StaffsViewTemplate}"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Style="{StaticResource NavigationButtonStyle}" Height="30" Content="Inventory" Command="{Binding OpenTabCommand}" CommandParameter="{x:Static structures:TabType.Inventory}"/>
+            <Button Content="Menus" Style="{StaticResource NavigationButtonStyle}" Height="30"  Command="{Binding OpenTabCommand}" CommandParameter="{x:Static structures:TabType.Menu}"/>
+            <Button Content="Staff" Style="{StaticResource NavigationButtonStyle}" Height="30" Command="{Binding OpenTabCommand}" CommandParameter="{x:Static structures:TabType.Staff}"/>
+        </StackPanel>
+        <GridSplitter Grid.Column="1" Cursor="SizeWE" ShowsPreview="True" Width="5" Background="DarkRed" HorizontalAlignment="Center"/>
+        <TabControl Grid.Column="2" ItemsSource="{Binding TabItems}" SelectedItem="{Binding SelectedTab}"
+                    ContentTemplateSelector="{StaticResource AdminDataTemplateSelector}">
+            <TabControl.ItemContainerStyle>
+                <Style TargetType="TabItem" BasedOn="{StaticResource {x:Type TabItem}}">
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="FontWeight" Value="Bold"/>
+                        </Trigger>
+                    </Style.Triggers>
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalAlignment" Value="Stretch"/>
+                    <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                    <Setter Property="HeaderTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="{Binding TabTitle}" FontSize="15" HorizontalAlignment="Center"/>
+                                    <Button Width="25" Height="25" Command="{Binding RelativeSource={RelativeSource AncestorType={x:Type views:AdminView}}, Path=DataContext.CloseTabCommand}"
+                                            CommandParameter="{Binding .}" Background="Transparent" BorderBrush="Transparent">
+                                        <Button.Content>
+                                            <Image Source="pack://application:,,,/RMS.Structures;component/Icons/close.png"/>
+                                        </Button.Content>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </TabControl.ItemContainerStyle>
+        </TabControl>
+    </Grid>
+</UserControl>

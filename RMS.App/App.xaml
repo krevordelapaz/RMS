@@ -1,0 +1,17 @@
+﻿<Application x:Class="RMS.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:RMS.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Brushes.xaml"/>
+                <ResourceDictionary Source="Styles/Button.xaml"/>
+                <ResourceDictionary Source="Styles/CheckBox.xaml"/>
+                <ResourceDictionary Source="Styles/DatePicker.xaml"/>
+                <ResourceDictionary Source="Styles/Label.xaml"/>
+                <ResourceDictionary Source="Styles/TextBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
